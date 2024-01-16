@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane fx:id="border_pane" prefHeight="605.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.salesmanDashboard">
+   <center>
+      <AnchorPane style="-fx-background-color: linear-gradient(to top, #02462f,#01875b);" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="169.0" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="470.0" prefWidth="360.0" style="-fx-background-color: black; -fx-background-radius: 10 10 10 10;">
+               <children>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="450.0" prefWidth="340.0" styleClass="anchorPaneee" stylesheets="@CSS/adminLogin.css">
+                     <children>
+                        <Label alignment="CENTER" layoutX="61.0" layoutY="172.0" prefHeight="35.0" prefWidth="230.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 0 0 2 0;" text="name" />
+                        <Label alignment="CENTER" layoutX="61.0" layoutY="225.0" prefHeight="35.0" prefWidth="230.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 0 0 2 0;" text="age" />
+                        <Label alignment="CENTER" layoutX="61.0" layoutY="279.0" prefHeight="35.0" prefWidth="230.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 0 0 2 0;" text="brunch" />
+                        <Label alignment="CENTER" layoutX="61.0" layoutY="334.0" prefHeight="35.0" prefWidth="230.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 0 0 2 0;" text="ID" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="395.0" layoutX="22.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="6.0">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.010643274523317814" green="0.410526305437088" blue="0.10394931584596634" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.4751009421265141">
+                                       <color>
+                                          <Color red="0.0679532140493393" green="0.8736842274665833" blue="0.32310137152671814" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.9926829268292682">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="384.0" layoutX="38.0" layoutY="59.0" stroke="BLACK" strokeType="INSIDE" width="6.0">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.010643274523317814" green="0.410526305437088" blue="0.10394931584596634" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.4751009421265141">
+                                       <color>
+                                          <Color red="0.0679532140493393" green="0.8736842274665833" blue="0.32310137152671814" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.9926829268292682">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <ImageView fx:id="salesmanImg2" fitHeight="91.0" fitWidth="94.0" layoutX="131.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/salesperson.png" />
+                           </image>
+                           <effect>
+                              <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="0.0" elevation="188.26">
+                                       <color>
+                                          <Color green="1.0" blue="0.21568627655506134" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="520.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="16.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SALESMAN DASHBOARD" textAlignment="CENTER" wrappingWidth="174.93669891357422">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.010370370000600815" green="0.4000000059604645" blue="0.06881481409072876" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.46829268292682924">
+                           <color>
+                              <Color red="0.1269395649433136" green="0.23157894611358643" blue="0.16879531741142273" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13294346630573273" green="0.5789473652839661" blue="0.31134504079818726" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Button fx:id="expireCheck" layoutX="10.0" layoutY="187.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="182.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Expire Check" textFill="#b6fcca">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkDrug" layoutX="12.0" layoutY="242.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="182.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Check Drug" textFill="#b6fcca">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="generateBill" layoutX="12.0" layoutY="296.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="182.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Generate Bill" textFill="#b6fcca">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" layoutX="12.0" layoutY="350.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="182.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Logout" textFill="#b6fcca">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutY="462.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="201.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" textFill="#b6fcca">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="uTube_icon" fitHeight="31.0" fitWidth="32.0" layoutX="103.0" layoutY="479.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/youtube.png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" elevation="188.26">
+                           <color>
+                              <Color green="1.0" blue="0.21568627655506134" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fx:id="about" fitHeight="31.0" fitWidth="32.0" layoutX="149.0" layoutY="479.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/info.png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" elevation="188.26">
+                           <color>
+                              <Color green="1.0" blue="0.21568627655506134" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fx:id="facebook_icon" fitHeight="31.0" fitWidth="32.0" layoutX="14.0" layoutY="479.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/facebook.png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" elevation="188.26">
+                           <color>
+                              <Color green="1.0" blue="0.21568627655506134" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fx:id="msngr_icon" fitHeight="31.0" fitWidth="32.0" layoutX="61.0" layoutY="479.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/facebook-messenger.png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" elevation="188.26">
+                           <color>
+                              <Color green="1.0" blue="0.21568627655506134" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="17.0" layoutX="37.0" layoutY="363.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/sign-in-alt.png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" elevation="188.26">
+                           <color>
+                              <Color green="1.0" blue="0.21568627655506134" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="17.0" layoutX="29.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/tags.png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" elevation="188.26">
+                           <color>
+                              <Color green="1.0" blue="0.21568627655506134" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="17.0" layoutX="29.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/calendar-clock.png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" elevation="188.26">
+                           <color>
+                              <Color green="1.0" blue="0.21568627655506134" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="17.0" layoutX="28.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/clipboard-list-check.png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" elevation="188.26">
+                           <color>
+                              <Color green="1.0" blue="0.21568627655506134" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="80.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to bottom, #b6fcca,#f7faf9);" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="105.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MHI Pharma" wrappingWidth="288.53668212890625">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="31.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.010370370000600815" green="0.4000000059604645" blue="0.06881481409072876" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.46829268292682924">
+                           <color>
+                              <Color red="0.1269395649433136" green="0.23157894611358643" blue="0.16879531741142273" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13294346630573273" green="0.5789473652839661" blue="0.31134504079818726" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Button fx:id="back" layoutX="840.0" layoutY="30.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="38.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="&lt;&lt;&lt;" textFill="#b6fcca">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="62.0" fitWidth="76.0" layoutX="32.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pharmacy.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.59" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="salesmanImg1" fitHeight="62.0" fitWidth="117.0" layoutX="762.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/salesperson.png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" elevation="188.26">
+                           <color>
+                              <Color green="1.0" blue="0.21568627655506134" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <Text layoutX="740.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salesman Profile" textAlignment="CENTER" wrappingWidth="105.2000732421875">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="11.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.010370370000600815" green="0.4000000059604645" blue="0.06881481409072876" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.46829268292682924">
+                           <color>
+                              <Color red="0.1269395649433136" green="0.23157894611358643" blue="0.16879531741142273" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13294346630573273" green="0.5789473652839661" blue="0.31134504079818726" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,130 @@
+.roleBtn{
+-fx-background-color : linear-gradient(to left, #333300,#00cc66);
+-fx-border-color : #b6fcca;
+-fx-border-radius : 10 0 10 0;
+-fx-background-radius : 10 0 10 0;
+-fx-border-width : 2 2 2 2;
+}
+.roleBtn:hover{
+ -fx-background-color : linear-gradient(to right, #333300,#00cc66);
+}
+.tableView{
+ -fx-background-color : linear-gradient(to top, #b6fcca,#f7faf9);
+}
+.tableView.hover{
+-fx-background-color : linear-gradient(to bottom, #b6fcca,#f7faf9);
+}
+
+.tableView .table-column{
+    -fx-alignment: CENTER;
+}
+.tableView .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right, #bb1a3a, #722327);
+    -fx-background-radius: 8px 8px 0px 0px;
+    -fx-background-insets: 0 0 0 0;
+}
+.tableView .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+    -fx-text-fill: #02462f;
+}
+.tableView .column-header .label{
+    -fx-text-fill: #02462f;
+}
+
+.roleBgBtn{
+-fx-background-color : linear-gradient(to right,#336600,#00cc66);
+-fx-border-color : #b6fcca;
+-fx-border-radius : 0 20 0 20;
+-fx-background-radius : 0 20 0 20;
+-fx-border-width : 2 2 2 2;
+}
+.roleBgBtn:hover{
+-fx-border-radius : 30 0 30 0;
+-fx-background-radius : 30 0 30 0;
+-fx-background-color : linear-gradient(to right, #333300,#00cc66);
+}
+.btnBg{
+-fx-background-color :  linear-gradient(to left,#336600,#00cc66);
+-fx-border-color : #02462f;
+-fx-border-radius : 0 20 0 20;
+-fx-background-radius : 0 20 0 20;
+-fx-border-width : 4 4 4 4;
+}
+.textBar{
+-fx-background-color :  transparent;
+-fx-border-color :  #02462f;
+-fx-border-width :  0px 0px 3px 0px;
+}
+.imageView{
+-fx-background-color :  transparent;
+-fx-border-color :  #02462f;
+-fx-background-radius : 100%;
+}
+.chartBar{
+-fx-background-color :  transparent;
+}
+.chartBar: hover{
+-fx-background-color :  linear-gradient(to left,#336600,#00cc66);
+}
+.data0 .chartBar{
+-fx-background-color : linear-gradient(to top, #02462f,#01875b);
+-fx-width : 15px;
+-fx-background-radius : 3 3 0 0 ;
+}
+.data1 .chartBar{
+-fx-background-color : linear-gradient(to top, #02462f,#01875b);
+-fx-width : 15px;
+-fx-background-radius : 3 3 0 0 ;
+}
+.data2 .chartBar{
+-fx-background-color : linear-gradient(to top, #02462f,#01875b);
+-fx-width : 15px;
+-fx-background-radius : 3 3 0 0 ;
+}
+.data3 .chartBar{
+-fx-background-color : linear-gradient(to top, #02462f,#01875b);
+-fx-width : 15px;
+-fx-background-radius : 3 3 0 0 ;
+}
+.data4 .chartBar{
+-fx-background-color : linear-gradient(to top, #02462f,#01875b);
+-fx-width : 15px;
+-fx-background-radius : 3 3 0 0 ;
+}
+.data5 .chartBar{
+-fx-background-color : linear-gradient(to top, #02462f,#01875b);
+-fx-width : 15px;
+-fx-background-radius : 3 3 0 0 ;
+}
+.data6 .chartBar{
+-fx-background-color : linear-gradient(to top, #02462f,#01875b);
+-fx-width : 15px;
+-fx-background-radius : 3 3 0 0 ;
+}
+.data7 .chartBar{
+-fx-background-color : linear-gradient(to top, #02462f,#01875b);
+-fx-width : 15px;
+-fx-background-radius : 3 3 0 0 ;
+}
+.data8 .chartBar{
+-fx-background-color : linear-gradient(to top, #02462f,#01875b);
+-fx-width : 15px;
+-fx-background-radius : 3 3 0 0 ;
+}
+.data9 .chartBar{
+-fx-background-color : linear-gradient(to top, #02462f,#01875b);
+-fx-width : 15px;
+-fx-background-radius : 3 3 0 0 ;
+}
+.data10 .chartBar{
+-fx-background-color : linear-gradient(to top, #02462f,#01875b);
+-fx-width : 15px;
+-fx-background-radius : 3 3 0 0 ;
+}
+.data11 .chartBar{
+-fx-background-color : linear-gradient(to top, #02462f,#01875b);
+-fx-width : 15px;
+-fx-background-radius : 3 3 0 0 ;
+}
+

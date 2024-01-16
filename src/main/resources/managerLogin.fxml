@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to bottom, #02462f,#01875b);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.managerLogin">
+   <children>
+      <ImageView fx:id="designImage" fitHeight="279.0" fitWidth="366.0" layoutX="98.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Pharmacist-Vector-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="67.0" layoutX="130.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/pharmacy.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+         <effect>
+            <ColorAdjust brightness="0.71" contrast="-0.48" hue="-1.0" saturation="0.96" />
+         </effect>
+      </ImageView>
+      <Text layoutX="214.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MHI Pharma" wrappingWidth="199.7366943359375">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="28.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.13257576434901266" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.13122807443141937" green="0.7157894968986511" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4146341463414634">
+                     <color>
+                        <Color red="0.2749473750591278" green="0.8526315689086914" blue="0.1452631652355194" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <AnchorPane layoutX="474.0" layoutY="103.0" prefHeight="420.0" prefWidth="328.0" style="-fx-background-color: green;">
+         <children>
+            <AnchorPane layoutX="7.0" layoutY="4.0" prefHeight="412.0" prefWidth="314.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);">
+               <children>
+                  <ImageView fitHeight="107.0" fitWidth="119.0" layoutX="104.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/manager.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DISAPPEAR" />
+                     </cursor>
+                     <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.7">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="125.0" elevation="360.0">
+                                 <color>
+                                    <Color red="0.21568627655506134" green="1.0" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </ImageView>
+                  <TextField alignment="CENTER" layoutX="53.0" layoutY="180.0" prefHeight="28.0" prefWidth="208.0" promptText="user name" style="-fx-background-color: transparent; -fx-border-color: #02462f; -fx-border-width: 0 0 2 0;" />
+                  <TextField alignment="CENTER" layoutX="53.0" layoutY="215.0" prefHeight="28.0" prefWidth="208.0" promptText="password" style="-fx-background-color: transparent; -fx-border-color: #02462f; -fx-border-width: 0 0 2 0;" />
+                  <Button fx:id="login" layoutX="50.0" layoutY="272.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="208.0" styleClass="adminLoginBtns" stylesheets="@CSS/adminLogin.css" text="LOGIN" textFill="#b6fcca">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="signup" layoutX="50.0" layoutY="311.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="208.0" styleClass="adminLoginBtns" stylesheets="@CSS/adminLogin.css" text="SIGNUP" textFill="#b6fcca">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Text fill="#02462f" layoutX="11.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager Login" textAlignment="CENTER" wrappingWidth="290.936767578125">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Hyperlink alignment="CENTER" layoutX="50.0" layoutY="371.0" prefHeight="24.0" prefWidth="208.0" text="Forgot Password" textAlignment="CENTER" textFill="#02462f">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="10.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="6.0" layoutX="17.0" layoutY="572.0" stroke="BLACK" strokeType="INSIDE" width="762.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.22348490628329193">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.522394380067623">
+                     <color>
+                        <Color red="0.011111111380159855" green="1.0" blue="0.12648148834705353" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.955585464333782">
+                     <color>
+                        <Color red="0.018869396299123764" green="0.46315789222717285" blue="0.07070305198431015" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.018869396299123764" green="0.46315789222717285" blue="0.07070305198431015" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="6.0" layoutX="53.0" layoutY="555.0" stroke="BLACK" strokeType="INSIDE" width="817.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.22348490628329193">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.522394380067623">
+                     <color>
+                        <Color red="0.011111111380159855" green="1.0" blue="0.12648148834705353" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9502018842530282">
+                     <color>
+                        <Color red="0.018869396299123764" green="0.46315789222717285" blue="0.07070305198431015" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.018869396299123764" green="0.46315789222717285" blue="0.07070305198431015" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="527.0" layoutX="34.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="7.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.22348490628329193">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.018869396299123764" green="0.46315789222717285" blue="0.07070305198431015" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.034993270524899076">
+                     <color>
+                        <Color red="0.018869396299123764" green="0.46315789222717285" blue="0.07070305198431015" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.522394380067623">
+                     <color>
+                        <Color red="0.011111111380159855" green="1.0" blue="0.12648148834705353" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="496.0" layoutX="17.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" width="7.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.22348490628329193">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.018869396299123764" green="0.46315789222717285" blue="0.07070305198431015" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.034993270524899076">
+                     <color>
+                        <Color red="0.018869396299123764" green="0.46315789222717285" blue="0.07070305198431015" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.522394380067623">
+                     <color>
+                        <Color red="0.011111111380159855" green="1.0" blue="0.12648148834705353" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button fx:id="back" layoutX="820.0" layoutY="23.0" mnemonicParsing="false" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="&lt;&lt;&lt;" textFill="#b6fcca">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

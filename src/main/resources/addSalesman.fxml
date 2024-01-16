@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="516.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.addSalesman">
+   <children>
+      <ComboBox layoutX="57.0" layoutY="264.0" prefHeight="29.0" prefWidth="224.0" promptText="Add or Remove Salesman" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <TextField alignment="CENTER" layoutX="352.0" layoutY="149.0" prefHeight="10.0" prefWidth="285.0" promptText="name" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <Text fill="#02642f" layoutX="431.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert Salesman Information" textAlignment="CENTER" wrappingWidth="127.49371337890625">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+      </Text>
+      <TextField alignment="CENTER" layoutX="352.0" layoutY="191.0" prefHeight="10.0" prefWidth="285.0" promptText="contact no." styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <TextField alignment="CENTER" layoutX="352.0" layoutY="229.0" prefHeight="10.0" prefWidth="285.0" promptText="address" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <TextField alignment="CENTER" layoutX="352.0" layoutY="265.0" prefHeight="10.0" prefWidth="285.0" promptText="branch name" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <TextField alignment="CENTER" layoutX="352.0" layoutY="304.0" prefHeight="10.0" prefWidth="285.0" promptText="image url" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <Button layoutX="352.0" layoutY="383.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SAVE" textFill="#b6fcca">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="502.0" layoutY="383.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="135.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="DELETE" textFill="#b6fcca">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="57.0" layoutY="218.0" prefHeight="1.0" prefWidth="224.0" style="-fx-background-color: green;" />
+      <AmbientLight layoutX="80.0" layoutY="318.0" lightOn="true">
+         <color>
+            <Color red="0.1307106614112854" blue="1.0" />
+         </color>
+      </AmbientLight>
+      <ImageView fitHeight="80.0" fitWidth="96.0" layoutX="144.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/user-add.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="0.71" specularConstant="1.51" specularExponent="5.32" surfaceScale="1.77">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="125.0" elevation="360.0">
+                     <color>
+                        <Color green="1.0" blue="0.15000000596046448" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

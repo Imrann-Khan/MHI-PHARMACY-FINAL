@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to top, #02462f,#01875b);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.salesmanSignup">
+   <children>
+      <ImageView fitHeight="360.0" fitWidth="440.0" layoutX="51.0" layoutY="183.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/signup-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="519.0" layoutY="98.0" prefHeight="420.0" prefWidth="328.0" style="-fx-background-color: green;">
+         <children>
+            <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="408.0" prefWidth="314.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);">
+               <children>
+                  <Button fx:id="salesmanSignupToDashboard" layoutX="24.0" layoutY="343.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="266.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textAlignment="CENTER" textFill="#b6fcca">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="59.0" fitWidth="66.0" layoutX="40.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/salesperson.png" />
+                     </image>
+                     <effect>
+                        <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="125.0" elevation="360.0">
+                                 <color>
+                                    <Color red="0.003703703638166189" green="1.0" blue="0.2693827152252197" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </ImageView>
+                  <Text fill="#02462f" layoutX="99.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Signup As SALESMAN" wrappingWidth="169.336669921875">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField alignment="CENTER" layoutX="40.0" layoutY="94.0" prefHeight="28.0" prefWidth="110.0" promptText="first name" style="-fx-background-color: transparent; -fx-border-color: #02462f; -fx-border-width: 0 0 2 0;" />
+                  <TextField alignment="CENTER" layoutX="158.0" layoutY="94.0" prefHeight="28.0" prefWidth="110.0" promptText="last name" style="-fx-background-color: transparent; -fx-border-color: #02462f; -fx-border-width: 0 0 2 0;" />
+                  <TextField alignment="CENTER" layoutX="40.0" layoutY="122.0" prefHeight="28.0" prefWidth="225.0" promptText="email" style="-fx-background-color: transparent; -fx-border-color: #02462f; -fx-border-width: 0 0 2 0;" />
+                  <TextField alignment="CENTER" layoutX="40.0" layoutY="150.0" prefHeight="28.0" prefWidth="225.0" promptText="phone no." style="-fx-background-color: transparent; -fx-border-color: #02462f; -fx-border-width: 0 0 2 0;" />
+                  <TextField alignment="CENTER" layoutX="40.0" layoutY="178.0" prefHeight="28.0" prefWidth="225.0" promptText="password" style="-fx-background-color: transparent; -fx-border-color: #02462f; -fx-border-width: 0 0 2 0;" />
+                  <TextField alignment="CENTER" layoutX="40.0" layoutY="206.0" prefHeight="28.0" prefWidth="225.0" promptText="password" style="-fx-background-color: transparent; -fx-border-color: #02462f; -fx-border-width: 0 0 2 0;" />
+                  <RadioButton layoutX="37.0" layoutY="252.0" mnemonicParsing="false" text="Male" />
+                  <RadioButton layoutX="105.0" layoutY="252.0" mnemonicParsing="false" text="Female" />
+                  <RadioButton layoutX="199.0" layoutY="252.0" mnemonicParsing="false" text="Others" />
+                  <DatePicker layoutX="35.0" layoutY="289.0" prefHeight="26.0" prefWidth="236.0" promptText="date of birth" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="back" layoutX="795.0" layoutY="33.0" mnemonicParsing="false" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="&lt;&lt;&lt;" textFill="#b6fcca">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="11.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="59.0" fitWidth="65.0" layoutX="98.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/pharmacy.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="-1.0" saturation="-0.94" />
+         </effect>
+      </ImageView>
+      <Text fill="#b6fcca" layoutX="173.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MHI Pharma" wrappingWidth="224.53668212890625">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="31.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="6.0" layoutX="32.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="526.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.008382066152989864" green="0.4526315927505493" blue="0.15646523237228394" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.008382066152989864" green="0.4526315927505493" blue="0.15646523237228394" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.48292682926829256">
+                     <color>
+                        <Color red="0.27274852991104126" green="0.5789473652839661" blue="0.2187134474515915" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9515477792732168">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="6.0" layoutX="321.0" layoutY="556.0" stroke="BLACK" strokeType="INSIDE" width="526.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.48292682926829256">
+                     <color>
+                        <Color red="0.27274852991104126" green="0.5789473652839661" blue="0.2187134474515915" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9865410497981153">
+                     <color>
+                        <Color red="0.008382066152989864" green="0.4526315927505493" blue="0.15646523237228394" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.008382066152989864" green="0.4526315927505493" blue="0.15646523237228394" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+   </children>
+</AnchorPane>

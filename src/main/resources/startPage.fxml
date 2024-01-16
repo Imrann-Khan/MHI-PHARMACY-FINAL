@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.startPage">
+   <children>
+      <AnchorPane layoutX="73.0" layoutY="68.0" prefHeight="534.0" prefWidth="828.0" style="-fx-background-color: #02462f;">
+         <children>
+            <Label layoutX="311.0" layoutY="502.0" prefHeight="18.0" prefWidth="64.0" text="copyright " textFill="#b6fcca">
+               <font>
+                  <Font name="Berlin Sans FB" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="399.0" layoutY="502.0" prefHeight="18.0" prefWidth="138.0" text="2022- MHI Pharma" textFill="#b6fcca">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="18.0" fitWidth="27.0" layoutX="375.0" layoutY="503.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/copyrightt.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="13.0" layoutY="14.0" prefHeight="481.0" prefWidth="801.0" style="-fx-background-color: black; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10;">
+               <children>
+                  <AnchorPane layoutX="5.0" layoutY="7.0" prefHeight="468.0" prefWidth="791.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9); -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10;">
+                     <children>
+                        <ImageView fitHeight="399.0" fitWidth="588.0" layoutX="101.0" layoutY="55.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/pharmacy-concept-creative-vector-illustration-of-female-pharmacist-at-drugstore-counter-2C3XHM5-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#02462f" layoutX="7.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO MHI-PHARMA" textAlignment="CENTER" wrappingWidth="776.0000183105468">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="40.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="25.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacy is the science and practice of discovering, producing, preparing, dispensing, reviewing and monitoring medications, aiming to ensure the safe, effective, and affordable use of medicines. It is a miscellaneous science as it links health sciences with pharmaceutical sciences and natural sciences. The professional practice is becoming more clinically oriented as most of the drugs are now manufactured by pharmaceutical industries." textAlignment="CENTER" wrappingWidth="741.3366394042969">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                           </font>
+                           <fill>
+                              <RadialGradient centerX="0.5077092511013215" centerY="0.4962121428865375" radius="0.5">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.5235531628532973">
+                                       <color>
+                                          <Color red="0.07192982733249664" green="0.4736842215061188" blue="0.07192982733249664" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.6276400879755769">
+                                       <color>
+                                          <Color red="0.14596490561962128" green="0.27368420362472534" blue="0.15873683989048004" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.9004037685060566">
+                                       <color>
+                                          <Color red="0.007329434622079134" green="0.49473685026168823" blue="0.007329434622079134" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </RadialGradient>
+                           </fill>
+                        </Text>
+                        <Text layoutX="33.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The scope of pharmacy practice includes more traditional roles such as compounding and dispensing of medications. It also includes more modern services related to health care including clinical services, reviewing medications for safety and efficacy, and providing drug information. Pharmacists, therefore, are experts on drug therapy and are the primary health professionals who optimize the use of medication for the benefit of the patients." textAlignment="CENTER" wrappingWidth="725.3367233276367">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                           </font>
+                           <fill>
+                              <RadialGradient centerX="0.5077092511013215" centerY="0.4962121428865375" radius="0.5">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.5235531628532973">
+                                       <color>
+                                          <Color red="0.07192982733249664" green="0.4736842215061188" blue="0.07192982733249664" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.6276400879755769">
+                                       <color>
+                                          <Color red="0.14596490561962128" green="0.27368420362472534" blue="0.15873683989048004" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.9004037685060566">
+                                       <color>
+                                          <Color red="0.007329434622079134" green="0.49473685026168823" blue="0.007329434622079134" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </RadialGradient>
+                           </fill>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="getStarted" alignment="CENTER_RIGHT" layoutX="770.0" layoutY="16.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="110.0" styleClass="getStarted" stylesheets="@CSS/startPage.css" text="Get Started" textFill="#d0ffdd">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="21.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/instagram.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+               <light>
+                  <Light.Distant azimuth="125.51" elevation="360.0">
+                     <color>
+                        <Color red="0.21568627655506134" green="1.0" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="21.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/facebook-messenger.png" />
+         </image>
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+               <light>
+                  <Light.Distant azimuth="125.51" elevation="360.0">
+                     <color>
+                        <Color red="0.21446700394153595" green="1.0" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="21.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/facebook.png" />
+         </image>
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+               <light>
+                  <Light.Distant azimuth="125.51" elevation="360.0">
+                     <color>
+                        <Color red="0.21446700394153595" green="1.0" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="27.0" layoutX="21.0" layoutY="537.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/info.png" />
+         </image>
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+               <light>
+                  <Light.Distant azimuth="125.51" elevation="360.0">
+                     <color>
+                        <Color red="0.21446700394153595" green="1.0" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="21.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/youtube.png" />
+         </image>
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+               <light>
+                  <Light.Distant azimuth="125.51" elevation="360.0">
+                     <color>
+                        <Color red="0.21446700394153595" green="1.0" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="63.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/pharmacy.png" />
+         </image>
+         <effect>
+            <DisplacementMap wrap="true">
+               <mapData>
+                  <FloatMap />
+               </mapData>
+               <input>
+                  <Reflection fraction="1.0" topOpacity="0.11" />
+               </input>
+            </DisplacementMap>
+         </effect>
+      </ImageView>
+      <Text layoutX="73.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MHI Pharma" wrappingWidth="358.9365768432617">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="37.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.9053030303030303" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.07622689820437899">
+                     <color>
+                        <Color red="0.04775828495621681" green="0.5157894492149353" blue="0.34417805075645447" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2634638742080555">
+                     <color>
+                        <Color red="0.008100000210106373" green="0.27000001072883606" blue="0.17833499610424042" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.40327282276860443">
+                     <color>
+                        <Color red="0.04502924159169197" green="0.5789473652839661" blue="0.3742787539958954" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5381150904375798">
+                     <color>
+                        <Color red="0.1100194901227951" green="0.35789474844932556" blue="0.26700714230537415" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="780.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/sign-in-alt.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

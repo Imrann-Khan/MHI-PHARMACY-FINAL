@@ -1,0 +1,9 @@
+.getStarted{
+-fx-background-color : linear-gradient(to left, #333300,#00cc66);
+-fx-border-color : #b6fcca;
+-fx-border-radius : 10 0 10 0;
+-fx-border-width : 2 2 2 2;
+}
+.getStarted:hover{
+-fx-background-color : linear-gradient(to right, #333300,#00cc66);
+}

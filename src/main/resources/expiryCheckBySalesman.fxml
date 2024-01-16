@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="516.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.expiryCheckBySalesman">
+   <children>
+      <Text fill="#02462f" layoutX="38.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drug Details " wrappingWidth="167.78240966796875">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="38.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID : " wrappingWidth="81.59649658203125">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="33.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drug Name : " wrappingWidth="91.19647979736328">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="351.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company : " wrappingWidth="81.59649658203125">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="136.0" layoutY="117.0" prefHeight="29.0" prefWidth="190.0" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <TextField layoutX="135.0" layoutY="161.0" prefHeight="29.0" prefWidth="190.0" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <TextField layoutX="451.0" layoutY="114.0" prefHeight="29.0" prefWidth="190.0" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <Text fill="#02462f" layoutX="353.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expire Date : " wrappingWidth="91.19647979736328">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Text>
+      <DatePicker layoutX="454.0" layoutY="171.0" prefHeight="26.0" prefWidth="190.0" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <TableView layoutX="6.0" layoutY="294.0" prefHeight="217.0" prefWidth="690.0" styleClass="tableView" stylesheets="@CSS/rolePage.css">
+        <columns>
+          <TableColumn prefWidth="75.0" style="-fx-background-color: #b6fcca; -fx-border-color: #02462f; -fx-border-width: 2 2 2 2; -fx-border-radius: 4 4 4 4;" text="ID" />
+            <TableColumn prefWidth="256.8000259399414" style="-fx-background-color: #b6fcca; -fx-border-color: #02462f; -fx-border-width: 2 2 2 2; -fx-border-radius: 4 4 4 4;" text="Drug Name" />
+            <TableColumn minWidth="8.0" prefWidth="208.79995727539062" style="-fx-background-color: #b6fcca; -fx-border-color: #02462f; -fx-border-width: 2 2 2 2; -fx-border-radius: 4 4 4 4;" text="Company" />
+            <TableColumn minWidth="0.0" prefWidth="144.00006103515625" style="-fx-background-color: #b6fcca; -fx-border-color: #02462f; -fx-border-width: 2 2 2 2; -fx-border-radius: 4 4 4 4;" text="Expiry Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="193.0" layoutY="246.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="134.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SEARCH" textFill="#b6fcca">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="353.0" layoutY="246.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="134.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="UPDATE" textFill="#b6fcca">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="206.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/search.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="125.0" elevation="360.0">
+                     <color>
+                        <Color green="1.0" blue="0.3333333432674408" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="369.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/calendar-plus.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="125.0" elevation="360.0">
+                     <color>
+                        <Color green="1.0" blue="0.3333333432674408" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

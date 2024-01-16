@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="516.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.generateBill">
+   <children>
+      <ImageView fitHeight="477.0" fitWidth="424.0" layoutX="168.0" layoutY="14.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/MHI_Logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#02462f" layoutX="54.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MHI Pharma" wrappingWidth="220.53668975830078">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="54.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1912 Harvest Lane" wrappingWidth="122.1366958618164">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="54.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New York, NY 12210" wrappingWidth="122.1366958618164">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="54.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bll To" wrappingWidth="122.1366958618164">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="275.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ship To" wrappingWidth="122.1366958618164">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="519.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="122.1366958618164">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Text>
+      <Separator layoutX="54.0" layoutY="257.0" prefHeight="0.0" prefWidth="594.0" style="-fx-background-color: gray;" />
+      <Separator layoutX="54.0" layoutY="303.0" prefHeight="0.0" prefWidth="594.0" style="-fx-background-color: gray;" />
+      <Text fill="#02462f" layoutX="54.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL : " wrappingWidth="220.53668975830078">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+         </font>
+      </Text>
+      <Label alignment="CENTER" layoutX="419.0" layoutY="264.0" prefHeight="34.0" prefWidth="229.0" styleClass="anchorPaneee" stylesheets="@CSS/adminLogin.css" text="PRICE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="54.0" layoutY="452.0" prefHeight="0.0" prefWidth="594.0" style="-fx-background-color: gray;" />
+      <ImageView fitHeight="81.0" fitWidth="75.0" layoutX="566.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/pharmacy.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.81" contrast="1.0" hue="-1.0" saturation="-1.0" />
+         </effect>
+      </ImageView>
+      <Text fill="#02462f" layoutX="566.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MHI Pharma" wrappingWidth="102.1366958618164">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="54.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="10.0" prefWidth="160.0" promptText="name" styleClass="anchorPaneee" stylesheets="@CSS/adminLogin.css" />
+      <TextField layoutX="54.0" layoutY="203.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="10.0" prefWidth="160.0" promptText="address" styleClass="anchorPaneee" stylesheets="@CSS/adminLogin.css" />
+      <TextField layoutX="275.0" layoutY="203.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="10.0" prefWidth="160.0" promptText="address" styleClass="anchorPaneee" stylesheets="@CSS/adminLogin.css" />
+      <TextField layoutX="275.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="10.0" prefWidth="160.0" promptText="name" styleClass="anchorPaneee" stylesheets="@CSS/adminLogin.css" />
+      <TextField layoutX="516.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="10.0" prefWidth="160.0" promptText="date" styleClass="anchorPaneee" stylesheets="@CSS/adminLogin.css" />
+   </children>
+</AnchorPane>

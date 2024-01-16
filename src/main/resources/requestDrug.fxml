@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="516.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.requestDrug">
+   <children>
+      <BarChart fx:id="chart" layoutX="7.0" layoutY="238.0" prefHeight="273.0" prefWidth="670.0" styleClass="chartBar" stylesheets="@CSS/rolePage.css">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <AnchorPane layoutX="464.0" layoutY="31.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="18.0" layoutY="58.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="162.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Selling Month" textFill="#b6fcca">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="18.0" layoutY="161.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="162.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Amount" textFill="#b6fcca">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Button>
+            <Separator layoutX="4.0" layoutY="108.0" prefHeight="6.0" prefWidth="192.0" />
+            <TextField alignment="CENTER" layoutX="18.0" layoutY="22.0" prefHeight="26.0" prefWidth="162.0" promptText="enter selling month" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+            <TextField alignment="CENTER" layoutX="18.0" layoutY="122.0" prefHeight="26.0" prefWidth="162.0" promptText="enter amount" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="51.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Request For Drugs" wrappingWidth="315.73673248291016">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.00962962955236435" green="0.20000000298023224" blue="0.06039506196975708" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5585365853658536">
+                     <color>
+                        <Color red="0.09052631258964539" green="0.5684210658073425" blue="0.2338947355747223" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09052631258964539" green="0.5684210658073425" blue="0.2338947355747223" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="51.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drug &quot; Paracetamol &quot; is almost out of storage. Please look for it. The selling rate of &quot; Paracetamol &quot; within last few months are staged here." wrappingWidth="315.73673248291016">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1586744636297226" green="0.38947367668151855" blue="0.2163742631673813" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5585365853658536">
+                     <color>
+                        <Color red="0.09052631258964539" green="0.5684210658073425" blue="0.2338947355747223" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09052631258964539" green="0.5684210658073425" blue="0.2338947355747223" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

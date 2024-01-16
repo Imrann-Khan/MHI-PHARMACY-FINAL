@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="516.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.adminAddRmvDrug">
+   <children>
+      <TableView layoutX="352.0" layoutY="85.0" prefHeight="400.0" prefWidth="342.0" styleClass="tableView" stylesheets="@CSS/rolePage.css">
+        <columns>
+          <TableColumn prefWidth="36.79998779296875" style="-fx-background-color: #b6fcca; -fx-border-color: #02462f; -fx-border-width: 2 2 2 2; -fx-border-radius: 4 4 4 4;" text="ID" />
+            <TableColumn prefWidth="137.60000610351562" style="-fx-background-color: #b6fcca; -fx-border-color: #02462f; -fx-border-width: 2 2 2 2; -fx-border-radius: 4 4 4 4;" text="Drug Name" />
+            <TableColumn prefWidth="76.79998779296875" style="-fx-background-color: #b6fcca; -fx-border-color: #02462f; -fx-border-width: 2 2 2 2; -fx-border-radius: 4 4 4 4;" text="Quantity" />
+            <TableColumn prefWidth="87.99993896484375" style="-fx-background-color: #b6fcca; -fx-border-color: #02462f; -fx-border-width: 2 2 2 2; -fx-border-radius: 4 4 4 4;" text="Expiry Date" />
+        </columns>
+      </TableView>
+      <Text fill="#02462f" layoutX="5.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add or Remove Drug" textAlignment="CENTER" wrappingWidth="360.03192138671875">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="35.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drug Name : " wrappingWidth="103.19999999999982">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="35.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brunch : " wrappingWidth="103.19999999999982">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="35.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity : " wrappingWidth="114.13663482666027">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="30.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shipping Date : " wrappingWidth="114.13663482666027">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="30.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expiry Date : " wrappingWidth="114.13663482666016">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#02462f" layoutX="35.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :" wrappingWidth="80.53665161132812">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="144.0" layoutY="152.0" prefHeight="30.0" prefWidth="194.0" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <TextField layoutX="144.0" layoutY="189.0" prefHeight="30.0" prefWidth="194.0" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <TextField layoutX="144.0" layoutY="227.0" prefHeight="30.0" prefWidth="194.0" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <TextField layoutX="144.0" layoutY="262.0" prefHeight="30.0" prefWidth="194.0" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <DatePicker layoutX="144.0" layoutY="313.0" prefHeight="26.0" prefWidth="194.0" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <DatePicker layoutX="147.0" layoutY="362.0" prefHeight="29.0" prefWidth="194.0" styleClass="textBar" stylesheets="@CSS/rolePage.css" />
+      <Button layoutX="75.0" layoutY="425.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="ADD" textFill="#b6fcca">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="215.0" layoutY="425.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="REMOVE" textFill="#b6fcca">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+         </font>
+      </Button>
+      <Text fill="#c7010b" layoutX="144.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Only Accessed by ADMIN" wrappingWidth="120.53665924072266">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#c7010b" layoutX="144.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Only Accessed by ADMIN" wrappingWidth="120.53665924072266">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="10.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+.adminLoginBtns{
+-fx-background-color : linear-gradient(to left, #333300,#00cc66);
+-fx-border-color : #b6fcca;
+-fx-border-radius : 10 0 10 0;
+-fx-border-width : 2 2 2 2;
+}
+.adminLoginBtns:hover{
+-fx-background-color : linear-gradient(to right, #333300,#00cc66);
+}
+.anchorPaneee{
+-fx-background-color : linear-gradient(to top, #b6fcca,#f7faf9);
+-fx-background-radius : 10 10 10 10;
+-fx-border-color : #02463f;
+-fx-border-radius : 10 10 10 10;
+}
+
+.anchorPaneee:hover{
+-fx-background-color : linear-gradient(to bottom, #b6fcca,#f7faf9);
+-fx-background-radius : 10 10 10 10;
+}

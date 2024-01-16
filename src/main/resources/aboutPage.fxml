@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to top, #02462f,#01875b);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.aboutPage">
+   <children>
+      <Circle layoutX="172.0" layoutY="233.0" radius="102.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="431.0" layoutY="239.0" radius="102.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="698.0" layoutY="239.0" radius="102.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="431.0" layoutY="239.0" radius="96.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5385462555066081" centerY="0.49526513706554076" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.09265666546302068">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5136985851688933">
+                     <color>
+                        <Color red="0.9444444179534912" green="1.0" blue="0.9592592716217041" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9261989955027408">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <ImageView fitHeight="161.0" fitWidth="131.0" layoutX="364.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/me2-removebg-preview.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="125.0" elevation="360.0">
+                     <color>
+                        <Color green="0.9599999785423279" blue="0.057258881628513336" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="7.0" layoutY="22.0" prefHeight="72.0" prefWidth="886.0" style="-fx-background-color: linear-gradient(to top,#b6fcca,#ffffff); -fx-border-color: black; -fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20; -fx-border-width: 4 4 4 4;">
+         <children>
+            <Text fill="#02462f" layoutX="83.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MHI Pharma" wrappingWidth="303.73668670654297">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="31.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="68.0" fitWidth="59.0" layoutX="14.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pharmacy.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="826.0" layoutY="19.0" mnemonicParsing="false" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="&lt;&lt;&lt;" textFill="#b6fcca">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="11.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Circle layoutX="698.0" layoutY="239.0" radius="96.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5385462555066081" centerY="0.49526513706554076" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.09265666546302068">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5136985851688933">
+                     <color>
+                        <Color red="0.9444444179534912" green="1.0" blue="0.9592592716217041" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9261989955027408">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="172.0" layoutY="233.0" radius="96.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5385462555066081" centerY="0.49526513706554076" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.09265666546302068">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5136985851688933">
+                     <color>
+                        <Color red="0.9444444179534912" green="1.0" blue="0.9592592716217041" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9261989955027408">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <ImageView fitHeight="161.0" fitWidth="192.0" layoutX="76.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/314418960_671580481162227_3799248792367858872_n-removebg-preview.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="125.0" elevation="360.0">
+                     <color>
+                        <Color green="0.9599999785423279" blue="0.057258881628513336" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="161.0" fitWidth="120.0" layoutX="644.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/316230446_1300701354026103_6489941607746985434_n-removebg-preview.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="125.0" elevation="360.0">
+                     <color>
+                        <Color green="0.9599999785423279" blue="0.057258881628513336" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Text layoutX="100.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="202114068" wrappingWidth="167.73672485351562">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text layoutX="619.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="Md. Imran-Ul-Haq" wrappingWidth="242.13662719726562">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text layoutX="347.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="Humayra Akter" wrappingWidth="206.60545349121082">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text layoutX="100.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="Munjib Hasan" wrappingWidth="167.73672485351562">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text layoutX="619.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="202114068" wrappingWidth="167.73672485351562">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text layoutX="347.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="202114068" wrappingWidth="167.73672485351562">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="278.0" layoutX="70.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="6.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="278.0" layoutX="599.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="6.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="278.0" layoutX="332.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="6.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="arc1" fitHeight="154.0" fitWidth="168.0" layoutX="88.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/314418960_671580481162227_3799248792367858872_n-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="arc2" fitHeight="154.0" fitWidth="136.0" layoutX="371.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/me2-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="arc3" fitHeight="150.0" fitWidth="200.0" layoutX="651.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/316230446_1300701354026103_6489941607746985434_n-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
